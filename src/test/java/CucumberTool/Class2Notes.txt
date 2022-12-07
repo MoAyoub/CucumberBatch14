@@ -1,0 +1,25 @@
+Class 2 -
+
+Recap -
+      BDD - It allows us to write scenarios in gherkin language
+
+      Feature - User story
+      Scenario - Test case - every test case will be considered as scenario in BDD
+      Given - pre-requisite/pre-condition
+      When - perform actions
+      Then - Expected output
+      And - Supporting tag
+
+      Step definition - Cucumber provides you the snippet of step definition
+      In step definition, we write the code to perform actions which has been written in
+      the BDD statement
+
+      To execute all the feature files from one class, we need runner class
+
+To keep everything organised we need framework -
+Framework allows you to write simplified and organised code and
+it provides folder to structure which is easily understandable
+
+In framework, we have 2 separate branches for
+Java -  In java, we write all java classes
+Non - Java - In non-java, we write non java part such as features, files etc
