@@ -1,0 +1,3 @@
+recap: BDD : Behavioral driven development
+because the explanation part was available on the diagram
+I took screenshot on desktop
