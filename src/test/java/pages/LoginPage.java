@@ -16,10 +16,14 @@ public class LoginPage extends CommonMethods {
     @FindBy(id="btnLogin")
     public WebElement loginButton;
 
+    @FindBy(xpath="//*[@id='spanMessage']")
+    public WebElement errorMessage;
+
 
     public LoginPage(){
         //call selenium page factory
         PageFactory.initElements(driver, this);
+
     }
 
 

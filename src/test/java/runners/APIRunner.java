@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //features we use to provide the path of all the feature files
         features = "src/test/resources/features/",
-        glue = "steps",
+        glue = "APISteps",
         dryRun= false,
         //when you set dry run to true, it stops actual execution
         //it will quickly scan all the gherkin steps whether they are
@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
 
 //to remove irrelevant information from console, you need to set monochrome to true
         monochrome = true,
-    //pretty keyword prints the steps in the console to increase readability
+        //pretty keyword prints the steps in the console to increase readability
 
         //to generate the reports we need plugin of runner class
         //when we generate any report this should be under target folder
@@ -37,5 +37,6 @@ import org.junit.runner.RunWith;
 
 
 
-public class SmokeRunner {
+
+public class APIRunner {
 }

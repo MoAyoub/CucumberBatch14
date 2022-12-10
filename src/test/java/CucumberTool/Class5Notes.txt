@@ -1,0 +1,33 @@
+page object model is a design pattern
+
+
+
+Class 5 -
+        Recap - runner class - to run our test cases as per the requirement
+                                to generate missing steps
+                                to print the steps into the console
+                                to generate the report
+
+        Page object model - to have organised code and easy to maintain structure
+        according to it, we create separate class (page) according to the
+        screens available in the application and keep all the locators of this page
+        in it
+
+Hooks - we write pre condition and post condition using hooks in cucumber
+    @Before - pre condition needs to be mentioned in this
+    @After - post condition needs to be mentioned in this
+
+Rules - Hooks class must be created inside steps package
+
+Background - it is applicable only for one feature file
+             it means for every feature file background will be different
+             steps which are common among all the scenarios of that featur file
+             will be taken into background but make sure the flow is not broken.
+             if the flow breaks, then we cannot take steps in background after that
+
+
+Hooks VS background
+
+Hooks are applicable for whole project (for all the feature files)
+Background is applicable for one feature file and varies from file to file
+First Hooks execute then background execute then scenario execute
