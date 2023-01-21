@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         //implemented or not
 
 //if you wanna run specific sprint
-        tags="@api",
+        tags="@apidynamic",
 
 //to remove irrelevant information from console, you need to set monochrome to true
         monochrome = true,

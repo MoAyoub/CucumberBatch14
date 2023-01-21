@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "for generating the token before every request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2947972300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a JWT is generated",
+            "match": {
+              "location": "APISteps.GenerateTokenSteps.a_jwt_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-22T15:51:58.936Z",
+        "line": 35,
+        "name": "API test case for creating employee using highly dynamic body",
+        "description": "",
+        "id": "api-workflow-test;api-test-case-for-creating-employee-using-highly-dynamic-body",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4961600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "a request is prepared for creating an employee with dynamic data \"X123\",\"Y123\",\"M\",\"F\",\"2011-05-12\",\"Confirmed\",\"QA Eng\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"X123\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"Y123\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"M\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"F\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"2011-05-12\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"Confirmed\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"QA Eng\"",
+                  "offset": 112
+                }
+              ],
+              "location": "APISteps.APIWorkFlowSteps.a_request_is_prepared_for_creating_an_employee_with_dynamic_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154411300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "a POST call is made to create an employee",
+            "match": {
+              "location": "APISteps.APIWorkFlowSteps.a_post_call_is_made_to_create_an_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28296900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the status code for creating an employee is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 44
+                }
+              ],
+              "location": "APISteps.APIWorkFlowSteps.the_status_code_for_creating_an_employee_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55063700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the response body contains key \"Message\" and value \"Employee Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Employee Created\"",
+                  "offset": 51
+                }
+              ],
+              "location": "APISteps.APIWorkFlowSteps.the_response_body_contains_key_and_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21907700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the employee id \"Employee.employee_id\" is stored as global to be used for other requests",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee.employee_id\"",
+                  "offset": 16
+                }
+              ],
+              "location": "APISteps.APIWorkFlowSteps.the_employee_id_is_stored_as_global_to_be_used_for_other_requests(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apidynamic"
+          }
+        ]
+      }
+    ],
+    "name": "API workflow test",
+    "description": "",
+    "id": "api-workflow-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/APIWorkflow.feature",
+    "tags": []
+  }
+]
