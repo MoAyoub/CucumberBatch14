@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         //implemented or not
 
 //if you wanna run specific sprint
-        tags="@tc1101",
+        tags="@database",
 
 //to remove irrelevant information from console, you need to set monochrome to true
         monochrome = true,
@@ -28,14 +28,7 @@ import org.junit.runner.RunWith;
 //this failed.txt file holds all the scenarios which are failed during execution
 
 
-
-
-
-
-
 )
-
-
 
 public class SmokeRunner {
 }
